@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voice agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Voice agent</h1>
+      <p class="hint">Speak in Arabic or English. Switch any time. تحدث بالعربية أو الإنجليزية.</p>
+    </header>
+    <div class="controls">
+      <button id="start">Start talking</button>
+      <span id="status">Idle</span>
+    </div>
+    <div id="log" aria-live="polite"></div>
+    <form id="textForm">
+      <input id="textInput" dir="auto" placeholder="Or type a message" autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
